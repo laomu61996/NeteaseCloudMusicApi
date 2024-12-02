@@ -75,7 +75,6 @@ const chooseUserAgent = (crypto, uaType = 'pc') => {
 const createRequest = (uri, data, options) => {
   return new Promise((resolve, reject) => {
     let headers = options.headers || {}
-    let realIP = options.realIP || '8.149.141.155'
     let ip = options.realIP || options.ip || ''
     // console.log(ip)
     if (ip) {
